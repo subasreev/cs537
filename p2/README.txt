@@ -3,6 +3,8 @@ Author: Subasree Venkatsubhramaniyen
 -----------------------------------
 
 PART1: Shell
+http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Projects/p2a.html
+
 The program is intended to mimic a simple shell that can execute user programs (like ls, cat etc) and built-in commands namely pwd, cd, path, exit.
 The program takes no command line arguments. Upon execution, it prompts for user input command.
 
@@ -19,6 +21,8 @@ Error messages are redirected to .err appended to user input file.
 ----------------------------------
 
 PART2: xv6
+http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Projects/p2b.html
+
 Requirement is to add 2 new system calls, namely setpriority() and getpinfo()
 Scheduler to implement priority scheduling
 

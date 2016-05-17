@@ -1,5 +1,7 @@
 
 Part A - Scalable Web Crawler
+http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Projects/p4a-crawler.html
+
 Code Path: p4/linux/
 
 - added a list implementation for the parser and downloader queues
@@ -9,6 +11,8 @@ Code Path: p4/linux/
 - used a counter to track sum of both queue lengths, in order to check for the exit condition
 
 Part B - Kernel Threads
+http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Projects/p4b.html
+
 Code Path: p4/xv6/
 
 - wrote library function thread_create on the user side that uses the clone system call to create a new kernel thread that shares its address space with the calling process.

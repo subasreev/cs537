@@ -4,6 +4,8 @@ Author: Subasree Venkatsubhramaniyen
 
 ------------------------------------
 Part 1a: Sorting Program 
+http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Projects/p1a.html
+
 File: fastsort.c
 
 Description:
@@ -28,6 +30,7 @@ has been defined. Also, prefix operators are used intead of postfix operators. U
 
 ----------------------------------
 Part 1b: System call addition
+http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Projects/p1b.html
 
 The idea is to add a system call getprocs() in xv6 kernel. The system call is required to return the number of processes in the system. The problem ssttement requiresintroduction of code in various files in
 xv6 code base. Below are some code changes:

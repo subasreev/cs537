@@ -3,6 +3,8 @@ Author: Subasree Venkatsubhramaniyen
 -----------------------------------
 
 PART1: xv6 - NULL pointer dereference 
+http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Projects/p3a.html
+
 The program is intended to allocate virtual pages starting from page 1 i.e not allocating page 0 cause page 0 to be invalidated.
 Hence, access to page 0 would trap into the kernel, killing the process
 
@@ -15,6 +17,8 @@ user/makefile.mk - changed code to load program from address 0x1000 (decimal 409
 ----------------------------------
 
 PART2: xv6 - Shared Pages 
+http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Projects/p3b.html
+
 Requirement is to add 2 new system calls, namely shmem_access(page_number) and shmem_count(page_number)
 
 This causes introduction of new attributes namely is_shared(array of 4 elements to track whether process is sharing page i) and
