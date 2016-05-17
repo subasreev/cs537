@@ -1,0 +1,42 @@
+
+Part A - Scalable Web Crawler
+Code Path: p4/linux/
+
+- added a list implementation for the parser and downloader queues
+- added a hash table implementation to check for unique URLs. source: http://www.sparknotes.com/cs/searching/hashtables/section3.rhtml
+- used one lock for each queue , and also one condition variable each to check for fill/empty condition
+- wrote parser function to parse incoming links - uses a regex to search for the "link:" pattern
+- used a counter to track sum of both queue lengths, in order to check for the exit condition
+
+Part B - Kernel Threads
+Code Path: p4/xv6/
+
+- wrote library function thread_create on the user side that uses the clone system call to create a new kernel thread that shares its address space with the calling process.
+- similarly wrote library function thread_join on the user side that uses the join system call to wait for a particular thread. 
+- the lock_init library function initializes the lock value to 0
+- The lock_acquire function uses the x86 xchg operation to atomically increment and return the lock variable and lock_release releases the lock variable
+
+Contest for Part B
+Code Path: p4/contest/xv6
+- New system calls park and unpark
+- In lock_acquire, if a thread cannot succeed in acquiring a lock, park() is called to put thread to sleep rather than wasating cpu cycles by meaning of spinning
+- In lock_release, unpark() is called after re-setting lock so that all threads waiting on the lock channel are woken up. Can be enhanced to use queue in a list and wake up the first in the queue
+- park and unpark make use of underlying sleep() and wakeup1() calls
+
+- Handles the scenario when exec is invoked inside a thread of a child process and is successful
+	- special handling is required as parent process may be waiting on the child process whose address space is overlayed by exec program and is never woken up
+	- also, all threads that belong to the same address space are dangling and need to be killed as exec has replaced the address space with a new process
+- Code Changes
+	- kernel/proc.h - new variables  main_thread_pid (to track all threads belonging to same address space) and  saved_parent_proc (point to the right process when exec is invoked in a thread)
+		- main_thread_pid is set to pid of the proc upon creation
+		- whenever clone is called, new thread is created and its main_thread_pid is the same as that of the main_thread_pid of its parent thread
+
+	- kernel/exec.c 	
+		- if current proc is a thread, then saved_parent_proc is populated by walking through parent hierarchy to point to the main thread's parent to which control must be transferred for execution
+		- killAllThreads() is invoked to kill all threads with which proc is sharing the address space
+
+	- kernel/proc.c
+		- new function killAllThreads() - walks through ptable and sets all procs with same main_thread_pid as proc to ZOMBIE state, clearing their pgdir [never scheduled for execution by the scheduler]
+
+Please consider the code inside p4/xv6 for grading and we have submitted a separate codebase for the contest.
+

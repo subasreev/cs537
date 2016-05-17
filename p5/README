@@ -1,0 +1,15 @@
+
+Part A: File System Checker
+- mmap is used to read the file system image
+- Inode table blocks are scanned linearly and the checks are performed
+- 1d arrays are used to store the data block bitmap and inode usage to compare for allocation discrepancies
+- For data block usage, both direct and indirect pointers are scanned
+- Most of the functions and structures from mkfs.c of xv6 are imported for reuse
+
+Part B: File System with Small File Optimization
+- T_SMALLFILE is defined for supporting small files in include/stat.h
+- O_SMALLFILE is defined for supporting small files in open function in include/fcntl.h 
+- readi(), writei() functions have been modified to read/write the small files from appropriate offset 
+- unlink() also needs modification so as to avoid freeing data blocks for small files as the small files have no data blocks
+
+

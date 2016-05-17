@@ -1,0 +1,3153 @@
+starting build
+
+**********************************************************************
+
+Test build
+build xv6 using make
+
+**********************************************************************
+Trying to build project using make
+make
+Makefile:149: kernel/bio.d: No such file or directory
+Makefile:149: kernel/console.d: No such file or directory
+Makefile:149: kernel/exec.d: No such file or directory
+Makefile:149: kernel/file.d: No such file or directory
+Makefile:149: kernel/fs.d: No such file or directory
+Makefile:149: kernel/ide.d: No such file or directory
+Makefile:149: kernel/ioapic.d: No such file or directory
+Makefile:149: kernel/kalloc.d: No such file or directory
+Makefile:149: kernel/kbd.d: No such file or directory
+Makefile:149: kernel/lapic.d: No such file or directory
+Makefile:149: kernel/main.d: No such file or directory
+Makefile:149: kernel/mp.d: No such file or directory
+Makefile:149: kernel/picirq.d: No such file or directory
+Makefile:149: kernel/pipe.d: No such file or directory
+Makefile:149: kernel/proc.d: No such file or directory
+Makefile:149: kernel/spinlock.d: No such file or directory
+Makefile:149: kernel/string.d: No such file or directory
+Makefile:149: kernel/swtch.d: No such file or directory
+Makefile:149: kernel/syscall.d: No such file or directory
+Makefile:149: kernel/sysfile.d: No such file or directory
+Makefile:149: kernel/sysproc.d: No such file or directory
+Makefile:149: kernel/timer.d: No such file or directory
+Makefile:149: kernel/trapasm.d: No such file or directory
+Makefile:149: kernel/trap.d: No such file or directory
+Makefile:149: kernel/uart.d: No such file or directory
+Makefile:149: kernel/vectors.d: No such file or directory
+Makefile:149: kernel/vm.d: No such file or directory
+Makefile:149: kernel/bootmain.d: No such file or directory
+Makefile:149: kernel/bootasm.d: No such file or directory
+Makefile:149: kernel/multiboot.d: No such file or directory
+Makefile:149: kernel/data.d: No such file or directory
+Makefile:149: kernel/bootother.d: No such file or directory
+Makefile:149: kernel/initcode.d: No such file or directory
+Makefile:149: user/cat.d: No such file or directory
+Makefile:149: user/echo.d: No such file or directory
+Makefile:149: user/forktest.d: No such file or directory
+Makefile:149: user/grep.d: No such file or directory
+Makefile:149: user/init.d: No such file or directory
+Makefile:149: user/kill.d: No such file or directory
+Makefile:149: user/ln.d: No such file or directory
+Makefile:149: user/ls.d: No such file or directory
+Makefile:149: user/write3.d: No such file or directory
+Makefile:149: user/write2.d: No such file or directory
+Makefile:149: user/remove.d: No such file or directory
+Makefile:149: user/read_test.d: No such file or directory
+Makefile:149: user/test_file1.d: No such file or directory
+Makefile:149: user/test_file2.d: No such file or directory
+Makefile:149: user/mkdir.d: No such file or directory
+Makefile:149: user/rm.d: No such file or directory
+Makefile:149: user/sh.d: No such file or directory
+Makefile:149: user/stressfs.d: No such file or directory
+Makefile:149: user/tester.d: No such file or directory
+Makefile:149: user/usertests.d: No such file or directory
+Makefile:149: user/wc.d: No such file or directory
+Makefile:149: user/zombie.d: No such file or directory
+Makefile:149: user/ulib.d: No such file or directory
+Makefile:149: user/usys.d: No such file or directory
+Makefile:149: user/printf.d: No such file or directory
+Makefile:149: user/umalloc.d: No such file or directory
+Makefile:149: tools/mkfs.d: No such file or directory
+gcc  -iquote include -Wall -Werror -ggdb  \
+	  -M -MG tools/mkfs.c -MF tools/mkfs.d -MT tools/mkfs.d -MT tools/mkfs.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/umalloc.c -MF user/umalloc.d -MT user/umalloc.d -MT user/umalloc.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/printf.c -MF user/printf.d -MT user/printf.d -MT user/printf.o
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/usys.S -MF user/usys.d -MT user/usys.d -MT user/usys.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/ulib.c -MF user/ulib.d -MT user/ulib.d -MT user/ulib.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/zombie.c -MF user/zombie.d -MT user/zombie.d -MT user/zombie.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/wc.c -MF user/wc.d -MT user/wc.d -MT user/wc.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/usertests.c -MF user/usertests.d -MT user/usertests.d -MT user/usertests.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/stressfs.c -MF user/stressfs.d -MT user/stressfs.d -MT user/stressfs.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/sh.c -MF user/sh.d -MT user/sh.d -MT user/sh.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/rm.c -MF user/rm.d -MT user/rm.d -MT user/rm.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/mkdir.c -MF user/mkdir.d -MT user/mkdir.d -MT user/mkdir.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/test_file2.c -MF user/test_file2.d -MT user/test_file2.d -MT user/test_file2.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/test_file1.c -MF user/test_file1.d -MT user/test_file1.d -MT user/test_file1.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/read_test.c -MF user/read_test.d -MT user/read_test.d -MT user/read_test.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/remove.c -MF user/remove.d -MT user/remove.d -MT user/remove.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/write2.c -MF user/write2.d -MT user/write2.d -MT user/write2.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/write3.c -MF user/write3.d -MT user/write3.d -MT user/write3.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/ls.c -MF user/ls.d -MT user/ls.d -MT user/ls.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/ln.c -MF user/ln.d -MT user/ln.d -MT user/ln.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/kill.c -MF user/kill.d -MT user/kill.d -MT user/kill.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/init.c -MF user/init.d -MT user/init.d -MT user/init.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/grep.c -MF user/grep.d -MT user/grep.d -MT user/grep.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/forktest.c -MF user/forktest.d -MT user/forktest.d -MT user/forktest.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/echo.c -MF user/echo.d -MT user/echo.d -MT user/echo.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/cat.c -MF user/cat.d -MT user/cat.d -MT user/cat.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/initcode.S -MF kernel/initcode.d -MT kernel/initcode.d -MT kernel/initcode.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/bootother.S -MF kernel/bootother.d -MT kernel/bootother.d -MT kernel/bootother.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/data.S -MF kernel/data.d -MT kernel/data.d -MT kernel/data.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/multiboot.S -MF kernel/multiboot.d -MT kernel/multiboot.d -MT kernel/multiboot.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/bootasm.S -MF kernel/bootasm.d -MT kernel/bootasm.d -MT kernel/bootasm.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/bootmain.c -MF kernel/bootmain.d -MT kernel/bootmain.d -MT kernel/bootmain.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/vm.c -MF kernel/vm.d -MT kernel/vm.d -MT kernel/vm.o
+perl kernel/vectors.pl > kernel/vectors.S
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/vectors.S -MF kernel/vectors.d -MT kernel/vectors.d -MT kernel/vectors.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/uart.c -MF kernel/uart.d -MT kernel/uart.d -MT kernel/uart.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/trap.c -MF kernel/trap.d -MT kernel/trap.d -MT kernel/trap.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/trapasm.S -MF kernel/trapasm.d -MT kernel/trapasm.d -MT kernel/trapasm.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/timer.c -MF kernel/timer.d -MT kernel/timer.d -MT kernel/timer.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/sysproc.c -MF kernel/sysproc.d -MT kernel/sysproc.d -MT kernel/sysproc.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/sysfile.c -MF kernel/sysfile.d -MT kernel/sysfile.d -MT kernel/sysfile.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/syscall.c -MF kernel/syscall.d -MT kernel/syscall.d -MT kernel/syscall.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/swtch.S -MF kernel/swtch.d -MT kernel/swtch.d -MT kernel/swtch.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/string.c -MF kernel/string.d -MT kernel/string.d -MT kernel/string.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/spinlock.c -MF kernel/spinlock.d -MT kernel/spinlock.d -MT kernel/spinlock.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/proc.c -MF kernel/proc.d -MT kernel/proc.d -MT kernel/proc.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/pipe.c -MF kernel/pipe.d -MT kernel/pipe.d -MT kernel/pipe.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/picirq.c -MF kernel/picirq.d -MT kernel/picirq.d -MT kernel/picirq.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/mp.c -MF kernel/mp.d -MT kernel/mp.d -MT kernel/mp.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/main.c -MF kernel/main.d -MT kernel/main.d -MT kernel/main.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/lapic.c -MF kernel/lapic.d -MT kernel/lapic.d -MT kernel/lapic.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/kbd.c -MF kernel/kbd.d -MT kernel/kbd.d -MT kernel/kbd.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/kalloc.c -MF kernel/kalloc.d -MT kernel/kalloc.d -MT kernel/kalloc.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/ioapic.c -MF kernel/ioapic.d -MT kernel/ioapic.d -MT kernel/ioapic.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/ide.c -MF kernel/ide.d -MT kernel/ide.d -MT kernel/ide.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/fs.c -MF kernel/fs.d -MT kernel/fs.d -MT kernel/fs.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/file.c -MF kernel/file.d -MT kernel/file.d -MT kernel/file.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/exec.c -MF kernel/exec.d -MT kernel/exec.d -MT kernel/exec.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/console.c -MF kernel/console.d -MT kernel/console.d -MT kernel/console.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG kernel/bio.c -MF kernel/bio.d -MT kernel/bio.d -MT kernel/bio.o
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/bootasm.S -o kernel/bootasm.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		 -Os -c -o kernel/bootmain.o kernel/bootmain.c
+ld  -m    elf_i386 -nostdlib --omagic \
+		--entry=start --section-start=.text=0x7C00 \
+		--output=kernel/bootblock.out kernel/bootasm.o kernel/bootmain.o
+objcopy -S -O binary -j .text kernel/bootblock.out kernel/bootblock
+./kernel/sign.pl kernel/bootblock
+boot block is 447 bytes (max 510)
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/bio.o kernel/bio.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/console.o kernel/console.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/exec.o kernel/exec.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/file.o kernel/file.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/fs.o kernel/fs.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/ide.o kernel/ide.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/ioapic.o kernel/ioapic.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/kalloc.o kernel/kalloc.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/kbd.o kernel/kbd.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/lapic.o kernel/lapic.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/main.o kernel/main.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/mp.o kernel/mp.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/picirq.o kernel/picirq.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/pipe.o kernel/pipe.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/proc.o kernel/proc.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/spinlock.o kernel/spinlock.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/string.o kernel/string.c
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/swtch.S -o kernel/swtch.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/syscall.o kernel/syscall.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/sysfile.o kernel/sysfile.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/sysproc.o kernel/sysproc.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/timer.o kernel/timer.c
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/trapasm.S -o kernel/trapasm.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/trap.o kernel/trap.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/uart.o kernel/uart.c
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/vectors.S -o kernel/vectors.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/vm.o kernel/vm.c
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/multiboot.S -o kernel/multiboot.o
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/data.S -o kernel/data.o
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/bootother.S -o kernel/bootother.o
+ld  -m    elf_i386 -nostdlib --omagic \
+		--entry=start --section-start=.text=0x7000 \
+		--output=kernel/bootother.out kernel/bootother.o
+objcopy -S -O binary kernel/bootother.out bootother
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/initcode.S -o kernel/initcode.o
+ld  -m    elf_i386 -nostdlib --omagic \
+		--entry=start --section-start=.text=0x0 \
+		--output=kernel/initcode.out kernel/initcode.o
+objcopy -S -O binary kernel/initcode.out initcode
+ld  -m    elf_i386 -nostdlib --omagic \
+		--section-start=.text=0x100000 --entry=main --output=kernel/kernel \
+		kernel/multiboot.o kernel/data.o kernel/bio.o kernel/console.o kernel/exec.o kernel/file.o kernel/fs.o kernel/ide.o kernel/ioapic.o kernel/kalloc.o kernel/kbd.o kernel/lapic.o kernel/main.o kernel/mp.o kernel/picirq.o kernel/pipe.o kernel/proc.o kernel/spinlock.o kernel/string.o kernel/swtch.o kernel/syscall.o kernel/sysfile.o kernel/sysproc.o kernel/timer.o kernel/trapasm.o kernel/trap.o kernel/uart.o kernel/vectors.o kernel/vm.o \
+		-b binary initcode bootother
+dd if=/dev/zero of=xv6.img count=10000
+10000+0 records in
+10000+0 records out
+5120000 bytes (5.1 MB) copied, 0.0111505 s, 459 MB/s
+dd if=kernel/bootblock of=xv6.img conv=notrunc
+1+0 records in
+1+0 records out
+512 bytes (512 B) copied, 6.0812e-05 s, 8.4 MB/s
+dd if=kernel/kernel of=xv6.img seek=1 conv=notrunc
+253+1 records in
+253+1 records out
+129628 bytes (130 kB) copied, 0.000257191 s, 504 MB/s
+gcc -c  -iquote include -Wall -Werror -ggdb  -o tools/mkfs.o tools/mkfs.c
+gcc  tools/mkfs.o -o tools/mkfs
+mkdir -p fs
+cp README fs/README
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/cat.o user/cat.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/ulib.o user/ulib.c
+gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c user/usys.S -o user/usys.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/printf.o user/printf.c
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/umalloc.o user/umalloc.c
+mkdir -p user/bin
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/cat user/cat.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/cat fs/cat
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/echo.o user/echo.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/echo user/echo.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/echo fs/echo
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/forktest.o user/forktest.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/forktest user/forktest.o user/ulib.o user/usys.o
+cp user/bin/forktest fs/forktest
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/grep.o user/grep.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/grep user/grep.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/grep fs/grep
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/init.o user/init.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/init user/init.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/init fs/init
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/kill.o user/kill.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/kill user/kill.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/kill fs/kill
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/ln.o user/ln.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/ln user/ln.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/ln fs/ln
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/ls.o user/ls.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/ls user/ls.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/ls fs/ls
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/write3.o user/write3.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/write3 user/write3.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/write3 fs/write3
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/write2.o user/write2.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/write2 user/write2.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/write2 fs/write2
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/remove.o user/remove.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/remove user/remove.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/remove fs/remove
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/read_test.o user/read_test.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/read_test user/read_test.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/read_test fs/read_test
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/test_file1.o user/test_file1.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/test_file1 user/test_file1.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/test_file1 fs/test_file1
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/test_file2.o user/test_file2.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/test_file2 user/test_file2.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/test_file2 fs/test_file2
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/mkdir.o user/mkdir.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/mkdir user/mkdir.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/mkdir fs/mkdir
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/rm.o user/rm.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/rm user/rm.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/rm fs/rm
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/sh.o user/sh.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/sh user/sh.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/sh fs/sh
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/stressfs.o user/stressfs.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/stressfs user/stressfs.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/stressfs fs/stressfs
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/usertests.o user/usertests.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/usertests user/usertests.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/usertests fs/usertests
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/wc.o user/wc.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/wc user/wc.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/wc fs/wc
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/zombie.o user/zombie.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/zombie user/zombie.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/zombie fs/zombie
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 550 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/stressfs user/bin/grep user/bin/write2 user/bin/tester user/bin/kill user/bin/cat user/bin/mkdir user/bin/init user/bin/read_test user/bin/rm user/bin/echo user/bin/write3 user/bin/remove user/bin/ls user/bin/test_file1 user/bin/ln user/bin/usertests user/bin/sh user/bin/wc user/bin/test_file2 user/bin/zombie
+
+
+test build PASSED
+ (build xv6 using make)
+
+starting macros
+
+**********************************************************************
+
+Test macros
+Make sure the macros are the right value.
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/macros.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 550 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+TEST PASSED
+$ 
+
+test macros PASSED (5 of 5)
+ (Make sure the macros are the right value.)
+
+starting fulldisk
+
+**********************************************************************
+
+Test fulldisk
+First uses all free blocks on disk for normal files and then makes sure small files can still be created. ***Note that the test will take a while since big files are created.***
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/fulldisk.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 552 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+creating large file: 0
+creating large file: 1
+creating large file: 2
+creating large file: 3
+all free blocks are used
+bytes written = 25
+TEST PASSED
+$ 
+
+test fulldisk PASSED (10 of 10)
+ (First uses all free blocks on disk for normal files and then makes sure small files can still be created. ***Note that the test will take a while since big files are created.***)
+
+starting create
+
+**********************************************************************
+
+Test create
+Creates a small file and makes sure the type is properly set.
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/create.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 551 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+TEST PASSED
+
+
+test create PASSED (10 of 10)
+ (Creates a small file and makes sure the type is properly set.)
+
+starting create2
+
+**********************************************************************
+
+Test create2
+Should not create a small file if O_SMALLFILE is passed in but not O_CREATE.
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/create2.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 551 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+TEST PASSED
+$ 
+
+test create2 PASSED (10 of 10)
+ (Should not create a small file if O_SMALLFILE is passed in but not O_CREATE.)
+
+starting open
+
+**********************************************************************
+
+Test open
+Open() called a second time without O_CREATE and O_SMALLFILE. Checks file's type to make sure it is T_SMALLFILE and that read and write still work
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/open.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 552 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+TEST PASSED
+
+
+test open PASSED (10 of 10)
+ (Open() called a second time without O_CREATE and O_SMALLFILE. Checks file's type to make sure it is T_SMALLFILE and that read and write still work)
+
+starting read
+
+**********************************************************************
+
+Test read
+Tries to read more than possible and makes sure only amount available is read.
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/read.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 552 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+bytes written = 25
+bytes read = 25
+TEST PASSED
+
+
+test read PASSED (10 of 10)
+ (Tries to read more than possible and makes sure only amount available is read.)
+
+starting read2
+
+**********************************************************************
+
+Test read2
+Reads one byte at a time from small file.
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/read2.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 552 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+TEST PASSED
+$ 
+
+test read2 PASSED (10 of 10)
+ (Reads one byte at a time from small file.)
+
+starting write
+
+**********************************************************************
+
+Test write
+Tries to write more than possible to a small file and makes sure only 52 bytes are written.
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/write.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 552 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+bytes written = 52
+bytes read = 52
+TEST PASSED
+
+
+test write PASSED (10 of 10)
+ (Tries to write more than possible to a small file and makes sure only 52 bytes are written.)
+
+starting write2
+
+**********************************************************************
+
+Test write2
+Repeatedly opens, writes, closes a small file. The last write should be the one that is persisted.
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/write2.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 552 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+TEST PASSED
+$ 
+
+test write2 PASSED (10 of 10)
+ (Repeatedly opens, writes, closes a small file. The last write should be the one that is persisted.)
+
+starting write3
+
+**********************************************************************
+
+Test write3
+Repeatedly opens, writes to the end, closes a small file until file is full.
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/write3.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 552 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+TEST PASSED
+$ 
+
+test write3 PASSED (10 of 10)
+ (Repeatedly opens, writes to the end, closes a small file until file is full.)
+
+starting write4
+
+**********************************************************************
+
+Test write4
+Small write followed by a big write to a small file should truncate the big write upto max small file size.
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/write4.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 553 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+TEST PASSED
+$ 
+
+test write4 PASSED (10 of 10)
+ (Small write followed by a big write to a small file should truncate the big write upto max small file size.)
+
+starting readonly
+
+**********************************************************************
+
+Test readonly
+Makes sure small files can be opened as read only and writes would fail.
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/readonly.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 552 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+TEST PASSED
+
+
+test readonly PASSED (10 of 10)
+ (Makes sure small files can be opened as read only and writes would fail.)
+
+starting writeonly
+
+**********************************************************************
+
+Test writeonly
+Makes sure small files can be opened as write only and reads would fail.
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/writeonly.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 553 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+TEST PASSED
+$ 
+
+test writeonly PASSED (10 of 10)
+ (Makes sure small files can be opened as write only and reads would fail.)
+
+starting remove
+
+**********************************************************************
+
+Test remove
+Makes sure removing a small file does not corrupt the file system by freeing blocks.
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/remove.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 552 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+TEST PASSED
+$ 
+
+test remove PASSED (10 of 10)
+ (Makes sure removing a small file does not corrupt the file system by freeing blocks.)
+
+starting stress
+
+**********************************************************************
+
+Test stress
+Creates and deletes a lot of small files one at a time to make sure nothing breaks under a heavy load.
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/stress.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 553 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+iteration 0
+iteration 1
+iteration 2
+iteration 3
+iteration 4
+iteration 5
+iteration 6
+iteration 7
+iteration 8
+iteration 9
+iteration 10
+iteration 11
+iteration 12
+iteration 13
+iteration 14
+iteration 15
+iteration 16
+iteration 17
+iteration 18
+iteration 19
+iteration 20
+iteration 21
+iteration 22
+iteration 23
+iteration 24
+iteration 25
+iteration 26
+iteration 27
+iteration 28
+iteration 29
+iteration 30
+iteration 31
+iteration 32
+iteration 33
+iteration 34
+iteration 35
+iteration 36
+iteration 37
+iteration 38
+iteration 39
+iteration 40
+iteration 41
+iteration 42
+iteration 43
+iteration 44
+iteration 45
+iteration 46
+iteration 47
+iteration 48
+iteration 49
+iteration 50
+iteration 51
+iteration 52
+iteration 53
+iteration 54
+iteration 55
+iteration 56
+iteration 57
+iteration 58
+iteration 59
+iteration 60
+iteration 61
+iteration 62
+iteration 63
+iteration 64
+iteration 65
+iteration 66
+iteration 67
+iteration 68
+iteration 69
+iteration 70
+iteration 71
+iteration 72
+iteration 73
+iteration 74
+iteration 75
+iteration 76
+iteration 77
+iteration 78
+iteration 79
+iteration 80
+iteration 81
+iteration 82
+iteration 83
+iteration 84
+iteration 85
+iteration 86
+iteration 87
+iteration 88
+iteration 89
+iteration 90
+iteration 91
+iteration 92
+iteration 93
+iteration 94
+iteration 95
+iteration 96
+iteration 97
+iteration 98
+iteration 99
+iteration 100
+iteration 101
+iteration 102
+iteration 103
+iteration 104
+iteration 105
+iteration 106
+iteration 107
+iteration 108
+iteration 109
+iteration 110
+iteration 111
+iteration 112
+iteration 113
+iteration 114
+iteration 115
+iteration 116
+iteration 117
+iteration 118
+iteration 119
+iteration 120
+iteration 121
+iteration 122
+iteration 123
+iteration 124
+iteration 125
+iteration 126
+iteration 127
+iteration 128
+iteration 129
+iteration 130
+iteration 131
+iteration 132
+iteration 133
+iteration 134
+iteration 135
+iteration 136
+iteration 137
+iteration 138
+iteration 139
+iteration 140
+iteration 141
+iteration 142
+iteration 143
+iteration 144
+iteration 145
+iteration 146
+iteration 147
+iteration 148
+iteration 149
+iteration 150
+iteration 151
+iteration 152
+iteration 153
+iteration 154
+iteration 155
+iteration 156
+iteration 157
+iteration 158
+iteration 159
+iteration 160
+iteration 161
+iteration 162
+iteration 163
+iteration 164
+iteration 165
+iteration 166
+iteration 167
+iteration 168
+iteration 169
+iteration 170
+iteration 171
+iteration 172
+iteration 173
+iteration 174
+iteration 175
+iteration 176
+iteration 177
+iteration 178
+iteration 179
+iteration 180
+iteration 181
+iteration 182
+iteration 183
+iteration 184
+iteration 185
+iteration 186
+iteration 187
+iteration 188
+iteration 189
+iteration 190
+iteration 191
+iteration 192
+iteration 193
+iteration 194
+iteration 195
+iteration 196
+iteration 197
+iteration 198
+iteration 199
+iteration 200
+iteration 201
+iteration 202
+iteration 203
+iteration 204
+iteration 205
+iteration 206
+iteration 207
+iteration 208
+iteration 209
+iteration 210
+iteration 211
+iteration 212
+iteration 213
+iteration 214
+iteration 215
+iteration 216
+iteration 217
+iteration 218
+iteration 219
+iteration 220
+iteration 221
+iteration 222
+iteration 223
+iteration 224
+iteration 225
+iteration 226
+iteration 227
+iteration 228
+iteration 229
+iteration 230
+iteration 231
+iteration 232
+iteration 233
+iteration 234
+iteration 235
+iteration 236
+iteration 237
+iteration 238
+iteration 239
+iteration 240
+iteration 241
+iteration 242
+iteration 243
+iteration 244
+iteration 245
+iteration 246
+iteration 247
+iteration 248
+iteration 249
+iteration 250
+iteration 251
+iteration 252
+iteration 253
+iteration 254
+iteration 255
+iteration 256
+iteration 257
+iteration 258
+iteration 259
+iteration 260
+iteration 261
+iteration 262
+iteration 263
+iteration 264
+iteration 265
+iteration 266
+iteration 267
+iteration 268
+iteration 269
+iteration 270
+iteration 271
+iteration 272
+iteration 273
+iteration 274
+iteration 275
+iteration 276
+iteration 277
+iteration 278
+iteration 279
+iteration 280
+iteration 281
+iteration 282
+iteration 283
+iteration 284
+iteration 285
+iteration 286
+iteration 287
+iteration 288
+iteration 289
+iteration 290
+iteration 291
+iteration 292
+iteration 293
+iteration 294
+iteration 295
+iteration 296
+iteration 297
+iteration 298
+iteration 299
+iteration 300
+iteration 301
+iteration 302
+iteration 303
+iteration 304
+iteration 305
+iteration 306
+iteration 307
+iteration 308
+iteration 309
+iteration 310
+iteration 311
+iteration 312
+iteration 313
+iteration 314
+iteration 315
+iteration 316
+iteration 317
+iteration 318
+iteration 319
+iteration 320
+iteration 321
+iteration 322
+iteration 323
+iteration 324
+iteration 325
+iteration 326
+iteration 327
+iteration 328
+iteration 329
+iteration 330
+iteration 331
+iteration 332
+iteration 333
+iteration 334
+iteration 335
+iteration 336
+iteration 337
+iteration 338
+iteration 339
+iteration 340
+iteration 341
+iteration 342
+iteration 343
+iteration 344
+iteration 345
+iteration 346
+iteration 347
+iteration 348
+iteration 349
+iteration 350
+iteration 351
+iteration 352
+iteration 353
+iteration 354
+iteration 355
+iteration 356
+iteration 357
+iteration 358
+iteration 359
+iteration 360
+iteration 361
+iteration 362
+iteration 363
+iteration 364
+iteration 365
+iteration 366
+iteration 367
+iteration 368
+iteration 369
+iteration 370
+iteration 371
+iteration 372
+iteration 373
+iteration 374
+iteration 375
+iteration 376
+iteration 377
+iteration 378
+iteration 379
+iteration 380
+iteration 381
+iteration 382
+iteration 383
+iteration 384
+iteration 385
+iteration 386
+iteration 387
+iteration 388
+iteration 389
+iteration 390
+iteration 391
+iteration 392
+iteration 393
+iteration 394
+iteration 395
+iteration 396
+iteration 397
+iteration 398
+iteration 399
+iteration 400
+iteration 401
+iteration 402
+iteration 403
+iteration 404
+iteration 405
+iteration 406
+iteration 407
+iteration 408
+iteration 409
+iteration 410
+iteration 411
+iteration 412
+iteration 413
+iteration 414
+iteration 415
+iteration 416
+iteration 417
+iteration 418
+iteration 419
+iteration 420
+iteration 421
+iteration 422
+iteration 423
+iteration 424
+iteration 425
+iteration 426
+iteration 427
+iteration 428
+iteration 429
+iteration 430
+iteration 431
+iteration 432
+iteration 433
+iteration 434
+iteration 435
+iteration 436
+iteration 437
+iteration 438
+iteration 439
+iteration 440
+iteration 441
+iteration 442
+iteration 443
+iteration 444
+iteration 445
+iteration 446
+iteration 447
+iteration 448
+iteration 449
+iteration 450
+iteration 451
+iteration 452
+iteration 453
+iteration 454
+iteration 455
+iteration 456
+iteration 457
+iteration 458
+iteration 459
+iteration 460
+iteration 461
+iteration 462
+iteration 463
+iteration 464
+iteration 465
+iteration 466
+iteration 467
+iteration 468
+iteration 469
+iteration 470
+iteration 471
+iteration 472
+iteration 473
+iteration 474
+iteration 475
+iteration 476
+iteration 477
+iteration 478
+iteration 479
+iteration 480
+iteration 481
+iteration 482
+iteration 483
+iteration 484
+iteration 485
+iteration 486
+iteration 487
+iteration 488
+iteration 489
+iteration 490
+iteration 491
+iteration 492
+iteration 493
+iteration 494
+iteration 495
+iteration 496
+iteration 497
+iteration 498
+iteration 499
+iteration 500
+iteration 501
+iteration 502
+iteration 503
+iteration 504
+iteration 505
+iteration 506
+iteration 507
+iteration 508
+iteration 509
+iteration 510
+iteration 511
+iteration 512
+iteration 513
+iteration 514
+iteration 515
+iteration 516
+iteration 517
+iteration 518
+iteration 519
+iteration 520
+iteration 521
+iteration 522
+iteration 523
+iteration 524
+iteration 525
+iteration 526
+iteration 527
+iteration 528
+iteration 529
+iteration 530
+iteration 531
+iteration 532
+iteration 533
+iteration 534
+iteration 535
+iteration 536
+iteration 537
+iteration 538
+iteration 539
+iteration 540
+iteration 541
+iteration 542
+iteration 543
+iteration 544
+iteration 545
+iteration 546
+iteration 547
+iteration 548
+iteration 549
+iteration 550
+iteration 551
+iteration 552
+iteration 553
+iteration 554
+iteration 555
+iteration 556
+iteration 557
+iteration 558
+iteration 559
+iteration 560
+iteration 561
+iteration 562
+iteration 563
+iteration 564
+iteration 565
+iteration 566
+iteration 567
+iteration 568
+iteration 569
+iteration 570
+iteration 571
+iteration 572
+iteration 573
+iteration 574
+iteration 575
+iteration 576
+iteration 577
+iteration 578
+iteration 579
+iteration 580
+iteration 581
+iteration 582
+iteration 583
+iteration 584
+iteration 585
+iteration 586
+iteration 587
+iteration 588
+iteration 589
+iteration 590
+iteration 591
+iteration 592
+iteration 593
+iteration 594
+iteration 595
+iteration 596
+iteration 597
+iteration 598
+iteration 599
+iteration 600
+iteration 601
+iteration 602
+iteration 603
+iteration 604
+iteration 605
+iteration 606
+iteration 607
+iteration 608
+iteration 609
+iteration 610
+iteration 611
+iteration 612
+iteration 613
+iteration 614
+iteration 615
+iteration 616
+iteration 617
+iteration 618
+iteration 619
+iteration 620
+iteration 621
+iteration 622
+iteration 623
+iteration 624
+iteration 625
+iteration 626
+iteration 627
+iteration 628
+iteration 629
+iteration 630
+iteration 631
+iteration 632
+iteration 633
+iteration 634
+iteration 635
+iteration 636
+iteration 637
+iteration 638
+iteration 639
+iteration 640
+iteration 641
+iteration 642
+iteration 643
+iteration 644
+iteration 645
+iteration 646
+iteration 647
+iteration 648
+iteration 649
+iteration 650
+iteration 651
+iteration 652
+iteration 653
+iteration 654
+iteration 655
+iteration 656
+iteration 657
+iteration 658
+iteration 659
+iteration 660
+iteration 661
+iteration 662
+iteration 663
+iteration 664
+iteration 665
+iteration 666
+iteration 667
+iteration 668
+iteration 669
+iteration 670
+iteration 671
+iteration 672
+iteration 673
+iteration 674
+iteration 675
+iteration 676
+iteration 677
+iteration 678
+iteration 679
+iteration 680
+iteration 681
+iteration 682
+iteration 683
+iteration 684
+iteration 685
+iteration 686
+iteration 687
+iteration 688
+iteration 689
+iteration 690
+iteration 691
+iteration 692
+iteration 693
+iteration 694
+iteration 695
+iteration 696
+iteration 697
+iteration 698
+iteration 699
+iteration 700
+iteration 701
+iteration 702
+iteration 703
+iteration 704
+iteration 705
+iteration 706
+iteration 707
+iteration 708
+iteration 709
+iteration 710
+iteration 711
+iteration 712
+iteration 713
+iteration 714
+iteration 715
+iteration 716
+iteration 717
+iteration 718
+iteration 719
+iteration 720
+iteration 721
+iteration 722
+iteration 723
+iteration 724
+iteration 725
+iteration 726
+iteration 727
+iteration 728
+iteration 729
+iteration 730
+iteration 731
+iteration 732
+iteration 733
+iteration 734
+iteration 735
+iteration 736
+iteration 737
+iteration 738
+iteration 739
+iteration 740
+iteration 741
+iteration 742
+iteration 743
+iteration 744
+iteration 745
+iteration 746
+iteration 747
+iteration 748
+iteration 749
+iteration 750
+iteration 751
+iteration 752
+iteration 753
+iteration 754
+iteration 755
+iteration 756
+iteration 757
+iteration 758
+iteration 759
+iteration 760
+iteration 761
+iteration 762
+iteration 763
+iteration 764
+iteration 765
+iteration 766
+iteration 767
+iteration 768
+iteration 769
+iteration 770
+iteration 771
+iteration 772
+iteration 773
+iteration 774
+iteration 775
+iteration 776
+iteration 777
+iteration 778
+iteration 779
+iteration 780
+iteration 781
+iteration 782
+iteration 783
+iteration 784
+iteration 785
+iteration 786
+iteration 787
+iteration 788
+iteration 789
+iteration 790
+iteration 791
+iteration 792
+iteration 793
+iteration 794
+iteration 795
+iteration 796
+iteration 797
+iteration 798
+iteration 799
+iteration 800
+iteration 801
+iteration 802
+iteration 803
+iteration 804
+iteration 805
+iteration 806
+iteration 807
+iteration 808
+iteration 809
+iteration 810
+iteration 811
+iteration 812
+iteration 813
+iteration 814
+iteration 815
+iteration 816
+iteration 817
+iteration 818
+iteration 819
+iteration 820
+iteration 821
+iteration 822
+iteration 823
+iteration 824
+iteration 825
+iteration 826
+iteration 827
+iteration 828
+iteration 829
+iteration 830
+iteration 831
+iteration 832
+iteration 833
+iteration 834
+iteration 835
+iteration 836
+iteration 837
+iteration 838
+iteration 839
+iteration 840
+iteration 841
+iteration 842
+iteration 843
+iteration 844
+iteration 845
+iteration 846
+iteration 847
+iteration 848
+iteration 849
+iteration 850
+iteration 851
+iteration 852
+iteration 853
+iteration 854
+iteration 855
+iteration 856
+iteration 857
+iteration 858
+iteration 859
+iteration 860
+iteration 861
+iteration 862
+iteration 863
+iteration 864
+iteration 865
+iteration 866
+iteration 867
+iteration 868
+iteration 869
+iteration 870
+iteration 871
+iteration 872
+iteration 873
+iteration 874
+iteration 875
+iteration 876
+iteration 877
+iteration 878
+iteration 879
+iteration 880
+iteration 881
+iteration 882
+iteration 883
+iteration 884
+iteration 885
+iteration 886
+iteration 887
+iteration 888
+iteration 889
+iteration 890
+iteration 891
+iteration 892
+iteration 893
+iteration 894
+iteration 895
+iteration 896
+iteration 897
+iteration 898
+iteration 899
+iteration 900
+iteration 901
+iteration 902
+iteration 903
+iteration 904
+iteration 905
+iteration 906
+iteration 907
+iteration 908
+iteration 909
+iteration 910
+iteration 911
+iteration 912
+iteration 913
+iteration 914
+iteration 915
+iteration 916
+iteration 917
+iteration 918
+iteration 919
+iteration 920
+iteration 921
+iteration 922
+iteration 923
+iteration 924
+iteration 925
+iteration 926
+iteration 927
+iteration 928
+iteration 929
+iteration 930
+iteration 931
+iteration 932
+iteration 933
+iteration 934
+iteration 935
+iteration 936
+iteration 937
+iteration 938
+iteration 939
+iteration 940
+iteration 941
+iteration 942
+iteration 943
+iteration 944
+iteration 945
+iteration 946
+iteration 947
+iteration 948
+iteration 949
+iteration 950
+iteration 951
+iteration 952
+iteration 953
+iteration 954
+iteration 955
+iteration 956
+iteration 957
+iteration 958
+iteration 959
+iteration 960
+iteration 961
+iteration 962
+iteration 963
+iteration 964
+iteration 965
+iteration 966
+iteration 967
+iteration 968
+iteration 969
+iteration 970
+iteration 971
+iteration 972
+iteration 973
+iteration 974
+iteration 975
+iteration 976
+iteration 977
+iteration 978
+iteration 979
+iteration 980
+iteration 981
+iteration 982
+iteration 983
+iteration 984
+iteration 985
+iteration 986
+iteration 987
+iteration 988
+iteration 989
+iteration 990
+iteration 991
+iteration 992
+iteration 993
+iteration 994
+iteration 995
+iteration 996
+iteration 997
+iteration 998
+iteration 999
+TEST PASSED
+$ 
+
+test stress PASSED (10 of 10)
+ (Creates and deletes a lot of small files one at a time to make sure nothing breaks under a heavy load.)
+
+starting stress2
+
+**********************************************************************
+
+Test stress2
+Creates and deletes a lot of small files 100 of them at a time to make sure nothing breaks under a heavy load. ***Note that the test will take a VERY long time since a lot of files are created.***
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/stress2.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 553 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+iteration 0
+iteration 1
+iteration 2
+iteration 3
+iteration 4
+iteration 5
+iteration 6
+iteration 7
+iteration 8
+iteration 9
+iteration 10
+iteration 11
+iteration 12
+iteration 13
+iteration 14
+iteration 15
+iteration 16
+iteration 17
+iteration 18
+iteration 19
+iteration 20
+iteration 21
+iteration 22
+iteration 23
+iteration 24
+iteration 25
+iteration 26
+iteration 27
+iteration 28
+iteration 29
+iteration 30
+iteration 31
+iteration 32
+iteration 33
+iteration 34
+iteration 35
+iteration 36
+iteration 37
+iteration 38
+iteration 39
+iteration 40
+iteration 41
+iteration 42
+iteration 43
+iteration 44
+iteration 45
+iteration 46
+iteration 47
+iteration 48
+iteration 49
+TEST PASSED
+$ 
+
+test stress2 PASSED (10 of 10)
+ (Creates and deletes a lot of small files 100 of them at a time to make sure nothing breaks under a heavy load. ***Note that the test will take a VERY long time since a lot of files are created.***)
+
+starting smallbig
+
+**********************************************************************
+
+Test smallbig
+Creates bunch of small files; then creates bunch of big files to make sure normal files are not affected.
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/smallbig.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 555 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+TEST PASSED
+$ 
+
+test smallbig PASSED (10 of 10)
+ (Creates bunch of small files; then creates bunch of big files to make sure normal files are not affected.)
+
+starting inode
+
+**********************************************************************
+
+Test inode
+Uses all inodes in the file system; then repeatedly deleted and creates a file and makes sure the correct inode is reused for the new file.
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/inode.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 554 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+latest_inode = 26
+creating file at inode 27
+creating file at inode 28
+creating file at inode 29
+creating file at inode 30
+creating file at inode 31
+creating file at inode 32
+creating file at inode 33
+creating file at inode 34
+creating file at inode 35
+creating file at inode 36
+creating file at inode 37
+creating file at inode 38
+creating file at inode 39
+creating file at inode 40
+creating file at inode 41
+creating file at inode 42
+creating file at inode 43
+creating file at inode 44
+creating file at inode 45
+creating file at inode 46
+creating file at inode 47
+creating file at inode 48
+creating file at inode 49
+creating file at inode 50
+creating file at inode 51
+creating file at inode 52
+creating file at inode 53
+creating file at inode 54
+creating file at inode 55
+creating file at inode 56
+creating file at inode 57
+creating file at inode 58
+creating file at inode 59
+creating file at inode 60
+creating file at inode 61
+creating file at inode 62
+creating file at inode 63
+creating file at inode 64
+creating file at inode 65
+creating file at inode 66
+creating file at inode 67
+creating file at inode 68
+creating file at inode 69
+creating file at inode 70
+creating file at inode 71
+creating file at inode 72
+creating file at inode 73
+creating file at inode 74
+creating file at inode 75
+creating file at inode 76
+creating file at inode 77
+creating file at inode 78
+creating file at inode 79
+creating file at inode 80
+creating file at inode 81
+creating file at inode 82
+creating file at inode 83
+creating file at inode 84
+creating file at inode 85
+creating file at inode 86
+creating file at inode 87
+creating file at inode 88
+creating file at inode 89
+creating file at inode 90
+creating file at inode 91
+creating file at inode 92
+creating file at inode 93
+creating file at inode 94
+creating file at inode 95
+creating file at inode 96
+creating file at inode 97
+creating file at inode 98
+creating file at inode 99
+creating file at inode 100
+creating file at inode 101
+creating file at inode 102
+creating file at inode 103
+creating file at inode 104
+creating file at inode 105
+creating file at inode 106
+creating file at inode 107
+creating file at inode 108
+creating file at inode 109
+creating file at inode 110
+creating file at inode 111
+creating file at inode 112
+creating file at inode 113
+creating file at inode 114
+creating file at inode 115
+creating file at inode 116
+creating file at inode 117
+creating file at inode 118
+creating file at inode 119
+creating file at inode 120
+creating file at inode 121
+creating file at inode 122
+creating file at inode 123
+creating file at inode 124
+creating file at inode 125
+creating file at inode 126
+creating file at inode 127
+creating file at inode 128
+creating file at inode 129
+creating file at inode 130
+creating file at inode 131
+creating file at inode 132
+creating file at inode 133
+creating file at inode 134
+creating file at inode 135
+creating file at inode 136
+creating file at inode 137
+creating file at inode 138
+creating file at inode 139
+creating file at inode 140
+creating file at inode 141
+creating file at inode 142
+creating file at inode 143
+creating file at inode 144
+creating file at inode 145
+creating file at inode 146
+creating file at inode 147
+creating file at inode 148
+creating file at inode 149
+creating file at inode 150
+creating file at inode 151
+creating file at inode 152
+creating file at inode 153
+creating file at inode 154
+creating file at inode 155
+creating file at inode 156
+creating file at inode 157
+creating file at inode 158
+creating file at inode 159
+creating file at inode 160
+creating file at inode 161
+creating file at inode 162
+creating file at inode 163
+creating file at inode 164
+creating file at inode 165
+creating file at inode 166
+creating file at inode 167
+creating file at inode 168
+creating file at inode 169
+creating file at inode 170
+creating file at inode 171
+creating file at inode 172
+creating file at inode 173
+creating file at inode 174
+creating file at inode 175
+creating file at inode 176
+creating file at inode 177
+creating file at inode 178
+creating file at inode 179
+creating file at inode 180
+creating file at inode 181
+creating file at inode 182
+creating file at inode 183
+creating file at inode 184
+creating file at inode 185
+creating file at inode 186
+creating file at inode 187
+creating file at inode 188
+creating file at inode 189
+creating file at inode 190
+creating file at inode 191
+creating file at inode 192
+creating file at inode 193
+creating file at inode 194
+creating file at inode 195
+creating file at inode 196
+creating file at inode 197
+creating file at inode 198
+creating file at inode 199
+used up all inodes
+deleting and recreating file at inode 36
+deleting and recreating file at inode 45
+deleting and recreating file at inode 54
+deleting and recreating file at inode 63
+deleting and recreating file at inode 72
+deleting and recreating file at inode 81
+deleting and recreating file at inode 90
+deleting and recreating file at inode 99
+deleting and recreating file at inode 108
+deleting and recreating file at inode 117
+deleting and recreating file at inode 126
+deleting and recreating file at inode 135
+deleting and recreating file at inode 144
+deleting and recreating file at inode 153
+deleting and recreating file at inode 162
+deleting and recreating file at inode 171
+deleting and recreating file at inode 180
+deleting and recreating file at inode 189
+deleting and recreating file at inode 198
+TEST PASSED
+$ 
+
+test inode PASSED (10 of 10)
+ (Uses all inodes in the file system; then repeatedly deleted and creates a file and makes sure the correct inode is reused for the new file.)
+
+starting inode2
+
+**********************************************************************
+
+Test inode2
+Uses all inodes in the file system; then repeatedly deletes bunch of files and then creates that many files and makes sure the correct inodes are reused for the new files.
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/inode2.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 554 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+latest_inode = 26
+creating file at inode 27
+creating file at inode 28
+creating file at inode 29
+creating file at inode 30
+creating file at inode 31
+creating file at inode 32
+creating file at inode 33
+creating file at inode 34
+creating file at inode 35
+creating file at inode 36
+creating file at inode 37
+creating file at inode 38
+creating file at inode 39
+creating file at inode 40
+creating file at inode 41
+creating file at inode 42
+creating file at inode 43
+creating file at inode 44
+creating file at inode 45
+creating file at inode 46
+creating file at inode 47
+creating file at inode 48
+creating file at inode 49
+creating file at inode 50
+creating file at inode 51
+creating file at inode 52
+creating file at inode 53
+creating file at inode 54
+creating file at inode 55
+creating file at inode 56
+creating file at inode 57
+creating file at inode 58
+creating file at inode 59
+creating file at inode 60
+creating file at inode 61
+creating file at inode 62
+creating file at inode 63
+creating file at inode 64
+creating file at inode 65
+creating file at inode 66
+creating file at inode 67
+creating file at inode 68
+creating file at inode 69
+creating file at inode 70
+creating file at inode 71
+creating file at inode 72
+creating file at inode 73
+creating file at inode 74
+creating file at inode 75
+creating file at inode 76
+creating file at inode 77
+creating file at inode 78
+creating file at inode 79
+creating file at inode 80
+creating file at inode 81
+creating file at inode 82
+creating file at inode 83
+creating file at inode 84
+creating file at inode 85
+creating file at inode 86
+creating file at inode 87
+creating file at inode 88
+creating file at inode 89
+creating file at inode 90
+creating file at inode 91
+creating file at inode 92
+creating file at inode 93
+creating file at inode 94
+creating file at inode 95
+creating file at inode 96
+creating file at inode 97
+creating file at inode 98
+creating file at inode 99
+creating file at inode 100
+creating file at inode 101
+creating file at inode 102
+creating file at inode 103
+creating file at inode 104
+creating file at inode 105
+creating file at inode 106
+creating file at inode 107
+creating file at inode 108
+creating file at inode 109
+creating file at inode 110
+creating file at inode 111
+creating file at inode 112
+creating file at inode 113
+creating file at inode 114
+creating file at inode 115
+creating file at inode 116
+creating file at inode 117
+creating file at inode 118
+creating file at inode 119
+creating file at inode 120
+creating file at inode 121
+creating file at inode 122
+creating file at inode 123
+creating file at inode 124
+creating file at inode 125
+creating file at inode 126
+creating file at inode 127
+creating file at inode 128
+creating file at inode 129
+creating file at inode 130
+creating file at inode 131
+creating file at inode 132
+creating file at inode 133
+creating file at inode 134
+creating file at inode 135
+creating file at inode 136
+creating file at inode 137
+creating file at inode 138
+creating file at inode 139
+creating file at inode 140
+creating file at inode 141
+creating file at inode 142
+creating file at inode 143
+creating file at inode 144
+creating file at inode 145
+creating file at inode 146
+creating file at inode 147
+creating file at inode 148
+creating file at inode 149
+creating file at inode 150
+creating file at inode 151
+creating file at inode 152
+creating file at inode 153
+creating file at inode 154
+creating file at inode 155
+creating file at inode 156
+creating file at inode 157
+creating file at inode 158
+creating file at inode 159
+creating file at inode 160
+creating file at inode 161
+creating file at inode 162
+creating file at inode 163
+creating file at inode 164
+creating file at inode 165
+creating file at inode 166
+creating file at inode 167
+creating file at inode 168
+creating file at inode 169
+creating file at inode 170
+creating file at inode 171
+creating file at inode 172
+creating file at inode 173
+creating file at inode 174
+creating file at inode 175
+creating file at inode 176
+creating file at inode 177
+creating file at inode 178
+creating file at inode 179
+creating file at inode 180
+creating file at inode 181
+creating file at inode 182
+creating file at inode 183
+creating file at inode 184
+creating file at inode 185
+creating file at inode 186
+creating file at inode 187
+creating file at inode 188
+creating file at inode 189
+creating file at inode 190
+creating file at inode 191
+creating file at inode 192
+creating file at inode 193
+creating file at inode 194
+creating file at inode 195
+creating file at inode 196
+creating file at inode 197
+creating file at inode 198
+creating file at inode 199
+used up all inodes
+deleting file at inode 36
+deleting file at inode 45
+deleting file at inode 54
+deleting file at inode 63
+deleting file at inode 72
+deleting file at inode 81
+deleting file at inode 90
+deleting file at inode 99
+deleting file at inode 108
+deleting file at inode 117
+deleting file at inode 126
+deleting file at inode 135
+deleting file at inode 144
+deleting file at inode 153
+deleting file at inode 162
+deleting file at inode 171
+deleting file at inode 180
+deleting file at inode 189
+deleting file at inode 198
+testing existence of file at inode 36
+testing existence of file at inode 45
+testing existence of file at inode 54
+testing existence of file at inode 63
+testing existence of file at inode 72
+testing existence of file at inode 81
+testing existence of file at inode 90
+testing existence of file at inode 99
+testing existence of file at inode 108
+testing existence of file at inode 117
+testing existence of file at inode 126
+testing existence of file at inode 135
+testing existence of file at inode 144
+testing existence of file at inode 153
+testing existence of file at inode 162
+testing existence of file at inode 171
+testing existence of file at inode 180
+testing existence of file at inode 189
+testing existence of file at inode 198
+recreating file at inode 36
+recreating file at inode 45
+recreating file at inode 54
+recreating file at inode 63
+recreating file at inode 72
+recreating file at inode 81
+recreating file at inode 90
+recreating file at inode 99
+recreating file at inode 108
+recreating file at inode 117
+recreating file at inode 126
+recreating file at inode 135
+recreating file at inode 144
+recreating file at inode 153
+recreating file at inode 162
+recreating file at inode 171
+recreating file at inode 180
+recreating file at inode 189
+recreating file at inode 198
+TEST PASSED
+
+
+test inode2 PASSED (10 of 10)
+ (Uses all inodes in the file system; then repeatedly deletes bunch of files and then creates that many files and makes sure the correct inodes are reused for the new files.)
+
+starting usertests
+
+**********************************************************************
+
+Test usertests
+Running standard tests to make sure you did not break anything for normal files. ***Note that the test will take a while since a lot of things are being tested.***
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/5bb/ctests/usertests.c
+Trying to build project using make
+make
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/tester fs/tester
+./tools/mkfs fs.img fs
+used 29 (bit 1 ninode 26) free 29 total 1024
+README
+echo
+cat
+zombie
+stressfs
+write3
+usertests
+forktest
+init
+mkdir
+test_file2
+ls
+test_file1
+sh
+write2
+grep
+kill
+remove
+rm
+wc
+ln
+read_test
+tester
+balloc: first 600 blocks have been allocated
+balloc: write bitmap block at sector 28
+rm user/bin/tester
+make qemu-nox CPUS=1
+Ctrl+a h for help
+/u/c/s/cs537-2/ta/tools/qemu -nographic -hdb fs.img xv6.img -smp 1
+Could not open option rom 'sgabios.bin': No such file or directory
+xv6...
+cpu0: starting
+init: starting sh
+$ tester
+tester
+usertests starting
+bigarg test: ok
+bss test: ok
+sbrk test
+pid 6 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0xa0000--kill proc
+pid 7 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0xac350--kill proc
+pid 8 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0xb86a0--kill proc
+pid 9 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0xc49f0--kill proc
+pid 10 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0xd0d40--kill proc
+pid 11 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0xdd090--kill proc
+pid 12 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0xe93e0--kill proc
+pid 13 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0xf5730--kill proc
+pid 14 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x101a80--kill proc
+pid 15 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x10ddd0--kill proc
+pid 16 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x11a120--kill proc
+pid 17 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x126470--kill proc
+pid 18 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x1327c0--kill proc
+pid 19 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x13eb10--kill proc
+pid 20 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x14ae60--kill proc
+pid 21 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x1571b0--kill proc
+pid 22 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x163500--kill proc
+pid 23 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x16f850--kill proc
+pid 24 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x17bba0--kill proc
+pid 25 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x187ef0--kill proc
+pid 26 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x194240--kill proc
+pid 27 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x1a0590--kill proc
+pid 28 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x1ac8e0--kill proc
+pid 29 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x1b8c30--kill proc
+pid 30 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x1c4f80--kill proc
+pid 31 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x1d12d0--kill proc
+pid 32 tester: trap 14 err 5 on cpu 0 eip 0x2eb9 addr 0x1dd620--kill proc
+sbrk test ok
+validate test: ok
+open test: ok
+small file test: ok
+big files test: ok
+create test: ok
+mem test: ok
+pipe1: ok
+preempt: kill... wait... ok
+exitwait: ok
+rmdot test: ok
+fourteen test: ok
+bigfile test: ok
+subdir test: ok
+concreate test: ok
+linktest: ok
+unlinkread test: ok
+createdelete test: ok
+twofiles test: ok
+sharedfd: ok
+dir vs file: ok
+empty file name: ok
+fork test: ok
+bigdir test: ok
+exec test
+TEST PASSED
+$ 
+
+test usertests PASSED (10 of 10)
+ (Running standard tests to make sure you did not break anything for normal files. ***Note that the test will take a while since a lot of things are being tested.***)
+
+**********************************************************************
+Summary:
+test build PASSED
+ (build xv6 using make)
+
+test macros PASSED (5 of 5)
+ (Make sure the macros are the right value.)
+
+test fulldisk PASSED (10 of 10)
+ (First uses all free blocks on disk for normal files and then makes sure small files can still be created. ***Note that the test will take a while since big files are created.***)
+
+test create PASSED (10 of 10)
+ (Creates a small file and makes sure the type is properly set.)
+
+test create2 PASSED (10 of 10)
+ (Should not create a small file if O_SMALLFILE is passed in but not O_CREATE.)
+
+test open PASSED (10 of 10)
+ (Open() called a second time without O_CREATE and O_SMALLFILE. Checks file's type to make sure it is T_SMALLFILE and that read and write still work)
+
+test read PASSED (10 of 10)
+ (Tries to read more than possible and makes sure only amount available is read.)
+
+test read2 PASSED (10 of 10)
+ (Reads one byte at a time from small file.)
+
+test write PASSED (10 of 10)
+ (Tries to write more than possible to a small file and makes sure only 52 bytes are written.)
+
+test write2 PASSED (10 of 10)
+ (Repeatedly opens, writes, closes a small file. The last write should be the one that is persisted.)
+
+test write3 PASSED (10 of 10)
+ (Repeatedly opens, writes to the end, closes a small file until file is full.)
+
+test write4 PASSED (10 of 10)
+ (Small write followed by a big write to a small file should truncate the big write upto max small file size.)
+
+test readonly PASSED (10 of 10)
+ (Makes sure small files can be opened as read only and writes would fail.)
+
+test writeonly PASSED (10 of 10)
+ (Makes sure small files can be opened as write only and reads would fail.)
+
+test remove PASSED (10 of 10)
+ (Makes sure removing a small file does not corrupt the file system by freeing blocks.)
+
+test stress PASSED (10 of 10)
+ (Creates and deletes a lot of small files one at a time to make sure nothing breaks under a heavy load.)
+
+test stress2 PASSED (10 of 10)
+ (Creates and deletes a lot of small files 100 of them at a time to make sure nothing breaks under a heavy load. ***Note that the test will take a VERY long time since a lot of files are created.***)
+
+test smallbig PASSED (10 of 10)
+ (Creates bunch of small files; then creates bunch of big files to make sure normal files are not affected.)
+
+test inode PASSED (10 of 10)
+ (Uses all inodes in the file system; then repeatedly deleted and creates a file and makes sure the correct inode is reused for the new file.)
+
+test inode2 PASSED (10 of 10)
+ (Uses all inodes in the file system; then repeatedly deletes bunch of files and then creates that many files and makes sure the correct inodes are reused for the new files.)
+
+test usertests PASSED (10 of 10)
+ (Running standard tests to make sure you did not break anything for normal files. ***Note that the test will take a while since a lot of things are being tested.***)
+
+Passed 21 of 21 tests.
+Overall 21 of 21
+Points 195 of 195
